@@ -6,10 +6,9 @@ import './Product.css';
 import './BestProduct.css'
 
 // Import JSX file
-import Header from "./Header.jsx";
-import BestProduct from './BestProduct.jsx';
-import PublishedProduct from './PublishedProduct.jsx';
-import Footer from './Footer.jsx';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home.jsx';
+import Contact from './pages/Contact.jsx';
 
 const products =[
   {
@@ -66,12 +65,12 @@ const products =[
 
 function App() {
   return (
-    <>
-      <Header />
-      <BestProduct productsForBestProduct = {products}/>
-      <PublishedProduct productsForPublishedProduct = {products}/>
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home products={products}/>} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
