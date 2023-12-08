@@ -1,0 +1,12 @@
+.App-the-best-product {
+    display: flex;
+    justify-content: center;
+}
+
+.App-best-product-card {
+    background-color: aqua;
+    border-radius: 20px;
+    margin: 50px;
+    padding: 25px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}

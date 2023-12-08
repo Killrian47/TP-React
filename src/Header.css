@@ -1,0 +1,39 @@
+.App-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: yellow;
+}
+
+.App-header-logo-and-title {
+    display: flex;
+    gap: 25px;
+    width: 50%;
+}
+
+.App-header-logo-and-title h4 {
+    margin-top: 25px;
+}
+
+.App-header-nav {
+    width: 40%;
+    
+}
+
+.App-header-nav ul{
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-around;
+}
+
+.App-header-nav ul li a{
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 45px;
+    background: linear-gradient(145deg, #aaaaaa, #cacaca);
+    box-shadow:  7px 7px 14px #868686,-7px -7px 14px #f4f4f4;
+}
+
+.App-header-nav ul li a:hover {
+    filter: brightness(75%);
+}
