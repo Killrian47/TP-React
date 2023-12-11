@@ -9,6 +9,8 @@ import './BestProduct.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home.jsx';
 import Contact from './pages/Contact.jsx';
+import Cgv from './pages/Cgv.jsx';
+import AllCanapes from './pages/AllCanapes.jsx';
 
 const products =[
   {
@@ -69,6 +71,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home products={products}/>} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/cgv" element={<Cgv />} />
+        <Route path="/canapes" element={<AllCanapes products={products}/>} />
       </Routes>
     </BrowserRouter>
   );
