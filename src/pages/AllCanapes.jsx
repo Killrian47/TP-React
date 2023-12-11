@@ -1,5 +1,6 @@
 import Footer from "../partials/Footer";
 import Header from "../partials/Header";
+import ProductCard from "../partials/ProductCard";
 
 const AllCanapes = ({products}) => {
     return (
@@ -9,11 +10,7 @@ const AllCanapes = ({products}) => {
         <div className="App-products-card">
             {products.map((product) => {
                 return (
-                    <div className="App-product-card">
-                        <h3 className="App-product-title">{product.title}</h3>
-                        <p className="App-product-price">Prix : {product.price}</p>
-                        <p className="App-product-rating">Sa note : {product.rating}</p>
-                    </div>
+                    <ProductCard product={product}/>
                 )
             })}
         </div>
