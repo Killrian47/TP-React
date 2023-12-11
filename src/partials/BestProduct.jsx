@@ -14,6 +14,7 @@ const BestProduct = ({productsForBestProduct}) => {
 
     return (
         <>
+            <h2 className="App-the-best-product-title">Le meilleur produit</h2>
             <div className="App-the-best-product">
                 {theBestProduct.map((product) => {
                     return (
